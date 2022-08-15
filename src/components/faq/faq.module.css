@@ -1,0 +1,106 @@
+.container {
+  margin-top: 12rem;
+  padding: 0 12rem;
+
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.container .left {
+  width: 50%;
+  position: relative;
+}
+
+.container .left img {
+  max-width: 40rem;
+}
+
+.container .left .RectangleUpper {
+  position: absolute;
+  right: 20%;
+  top: -10%;
+}
+
+.container .left .RectangleLower {
+  position: absolute;
+  right: 25%;
+  bottom: -20%;
+}
+
+.container .right {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.container .right .title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.5px;
+
+  color: #000000;
+}
+
+.container .right .pointsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container .right .point {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.container .right .point span {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10rem;
+  }
+
+  .container .left .RectangleUpper {
+    right: -5%;
+    top: -10%;
+  }
+
+  .container .left .RectangleLower {
+    right: 0;
+    bottom: -20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .container .left .RectangleUpper {
+    right: -25%;
+    top: -20%;
+  }
+
+  .container .left .RectangleLower {
+    right: -20%;
+    bottom: -20%;
+  }
+
+  .container .right {
+    width: 100%;
+  }
+}

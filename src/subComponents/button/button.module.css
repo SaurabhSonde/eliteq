@@ -1,0 +1,24 @@
+.container {
+  cursor: pointer;
+
+  padding: 1.2rem 3.2rem;
+  background: #ff6812;
+  border-radius: 12px;
+  border: 1px solid #ff6812;
+
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+
+  max-width: 18rem;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 15rem;
+  }
+}

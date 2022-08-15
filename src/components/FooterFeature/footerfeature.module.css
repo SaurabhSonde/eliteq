@@ -1,0 +1,72 @@
+.container {
+  margin-top: 13rem;
+  padding: 9rem 15rem;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  background: #fee9e1;
+}
+
+.container .left {
+  width: 50%;
+  position: relative;
+}
+
+.container .left .image {
+  width: 100%;
+}
+
+.container .left .ContactOverlay {
+  position: absolute;
+  bottom: -30%;
+  right: -20%;
+}
+
+.container .right {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container .right .title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.7rem;
+  letter-spacing: 0.5px;
+  color: #242424;
+}
+
+.container .right .subtitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.5px;
+  color: #79869f;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 8rem 12rem;
+  }
+
+  .container .left .ContactOverlay {
+    bottom: -30%;
+    right: -25%;
+    max-width: 35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container .right {
+    width: 100%;
+  }
+}
